@@ -1,0 +1,441 @@
+@import url("http://fonts.cdnfonts.com/css/pokemon-solid");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: 100%;
+}
+.container {
+  width: 1366px;
+  height: 657px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nintendoDs {
+  background-color: #3b3c41;
+  border: 3px solid #010204;
+  border-radius: 2%;
+  width: 800px;
+  height: 600px;
+}
+
+.nintendoUpper {
+  background-color: #34353a;
+  border-radius: 2%;
+  width: 800px;
+  height: 280px;
+}
+
+.nintendoMiddle {
+  background-color: #34353a;
+  box-shadow: 2px 2px 2px 2px lightgray;
+  border-radius: 2%;
+  width: 800px;
+  height: 40px;
+}
+
+.nintendoBottom {
+  background-color: #34353a;
+  border-radius: 2%;
+  width: 800px;
+  height: 280px;
+}
+
+.nintendoLeftSpeaker {
+  background-color: #34353a;
+  width: 150px;
+  height: 100px;
+  position: absolute;
+  bottom: 400px;
+}
+
+.nintendoRightSpeaker {
+  background-color: #34353a;
+  width: 150px;
+  height: 100px;
+  position: absolute;
+  right: 266px;
+  bottom: 400px;
+}
+
+.speaker {
+  background-color: #010204;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  position: absolute;
+}
+
+#speaker1 {
+  left: 25px;
+  top: 25px;
+}
+
+#speaker2 {
+  left: 70px;
+  top: 25px;
+}
+
+#speaker3 {
+  right: 25px;
+  top: 25px;
+}
+
+#speaker4 {
+  left: 25px;
+  bottom: 25px;
+}
+
+#speaker5 {
+  left: 70px;
+  bottom: 25px;
+}
+
+#speaker6 {
+  right: 25px;
+  bottom: 25px;
+}
+
+.nintendoScreenFrame {
+  background-color: #0d0e13;
+  width: 450px;
+  height: 250px;
+  position: relative;
+  left: 175px;
+  top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nintendoScreen {
+  background-image: url("../img/FondoPokemonAgua.jpg");
+  background-size: cover;
+  width: 435px;
+  height: 235px;
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  font-family: "Pokemon Solid", sans-serif;
+  font-size: 50px;
+  width: max-content;
+  height: max-content;
+  color: #ffcb05;
+  height: 100px;
+  text-shadow: 
+        /* first layer at 1px */ -1px -1px 0px #3860ab,
+    0px -1px 0px #3860ab, 1px -1px 0px #3860ab, -1px 0px 0px #3860ab,
+    1px 0px 0px #3860ab, -1px 1px 0px #3860ab, 0px 1px 0px #3860ab,
+    1px 1px 0px #3860ab, /* second layer at 2px */ -2px -2px 0px #3860ab,
+    -1px -2px 0px #3860ab, 0px -2px 0px #3860ab, 1px -2px 0px #3860ab,
+    2px -2px 0px #3860ab, 2px -1px 0px #3860ab, 2px 0px 0px #3860ab,
+    2px 1px 0px #3860ab, 2px 2px 0px #3860ab, 1px 2px 0px #3860ab,
+    0px 2px 0px #3860ab, -1px 2px 0px #3860ab, -2px 2px 0px #3860ab,
+    -2px 1px 0px #3860ab, -2px 0px 0px #3860ab, -2px -1px 0px #3860ab;
+}
+
+h2 {
+  position: absolute;
+  bottom: 10px;
+  background-color: #3860ab;
+}
+
+.middleLeftLine {
+  background-color: #0d0e13;
+  width: 6px;
+  height: 40px;
+  position: relative;
+  left: 70px;
+}
+
+.middleCamera {
+  background-color: #0d0e13;
+  width: 7px;
+  height: 20px;
+  position: relative;
+  bottom: 30px;
+  left: 400px;
+}
+
+.middleRightLine {
+  background-color: #0d0e13;
+  width: 6px;
+  height: 40px;
+  position: relative;
+  bottom: 60px;
+  left: 720px;
+}
+
+.middleFirstLight {
+  background-color: green;
+  width: 7px;
+  height: 40px;
+  position: relative;
+  bottom: 100px;
+  left: 740px;
+}
+
+.middleSecondLight {
+  background-color: green;
+  width: 7px;
+  height: 40px;
+  position: relative;
+  bottom: 140px;
+  left: 750px;
+}
+
+.cross {
+  width: 130px;
+  height: 130px;
+  position: relative;
+  top: 75px;
+  left: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.horizontalCross {
+  background-color: black;
+  position: absolute;
+  width: 130px;
+  height: 30px;
+}
+
+.horizontalCrossLine1 {
+  background-color: white;
+  width: 25px;
+  height: 3px;
+  position: absolute;
+  top: 13px;
+  left: 5px;
+}
+
+.horizontalCrossLine2 {
+  background-color: white;
+  width: 25px;
+  height: 3px;
+  position: absolute;
+  top: 13px;
+  right: 5px;
+}
+
+.verticalCross {
+  background-color: black;
+  position: absolute;
+  width: 30px;
+  height: 130px;
+}
+
+.verticalCrossLine1 {
+  background-color: white;
+  width: 3px;
+  height: 25px;
+  position: absolute;
+  top: 5px;
+  right: 13px;
+}
+
+.verticalCrossLine2 {
+  background-color: white;
+  width: 3px;
+  height: 25px;
+  position: absolute;
+  bottom: 5px;
+  right: 13px;
+}
+
+.bottomScreenFrame {
+  background-color: #0d0e13;
+  width: 450px;
+  height: 250px;
+  position: relative;
+  left: 175px;
+  bottom: 115px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nintendoScreen2 {
+  background-image: url("../img/battle.png");
+  background-size: cover;
+  width: 435px;
+  height: 235px;
+  display: flex;
+}
+
+button {
+  background-color: #34353a;
+  border: 0px;
+  position: absolute;
+  right: 5px;
+  top: 50px;
+}
+
+.buttons {
+  width: 130px;
+  height: 130px;
+  position: relative;
+  bottom: 305px;
+  left: 650px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  background-color: black;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  color: white;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+
+#buttonX {
+  top: 10px;
+}
+
+#buttonB {
+  bottom: 10px;
+}
+
+#buttonY {
+  left: 10px;
+}
+
+#buttonA {
+  right: 10px;
+}
+
+#pokeName {
+  border-radius: 2px;
+  font-size: 30px;
+  background-color: #52555a;
+  border-width: 0px;
+  border-bottom: 1px solid #010204;
+  width: 200px;
+  outline-color: #3860ab;
+  position: absolute;
+  top: 150px;
+}
+
+#pokeImg {
+  width: 130px;
+  height: max-content;
+  padding-top: 30px;
+  padding-left: 0px;
+}
+
+.stats {
+  position: absolute;
+  width: 150px;
+  font-size: 20px;
+  text-align: center;
+  outline: none;
+  border: 0px;
+}
+
+#pokemonName {
+  top: 1px;
+  left: 10px;
+  font-family: "Pokemon Solid", sans-serif;
+  font-size: 25px;
+  color: #ffcb05;
+}
+
+#pokemonType {
+  top: 10px;
+  right: 10px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#pokemonHp {
+  right: 10px;
+  top: 50px;
+}
+
+#pokemonAttack {
+  right: 10px;
+  top: 90px;
+}
+
+#pokemonDefense {
+  right: 10px;
+  top: 130px;
+}
+
+#pokemonSpecialAttack {
+  right: 10px;
+  top: 170px;
+}
+
+#pokemonSpecialDefense {
+  right: 10px;
+  top: 210px;
+}
+
+.fa-heart {
+  color: red;
+  position: absolute;
+  right: 140px;
+  top: 55px;
+}
+
+.sword {
+  position: absolute;
+  right: 140px;
+  top: 95px;
+}
+
+.fa-shield {
+  color: gray;
+  position: absolute;
+  right: 140px;
+  top: 135px;
+}
+
+.specialSword {
+  position: absolute;
+  right: 120px;
+  top: 175px;
+}
+
+.shieldSword {
+  left: 290px;
+  top: 215px;
+}
+
+#pokemonAbilities {
+  position: absolute;
+  bottom: 10px;
+  left: 100px;
+  outline: none;
+}
+textarea {
+  resize: none;
+  background: transparent;
+  border: none;
+}
+
+input[type="text"] {
+  background: transparent;
+  border: none;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="shortcut icon" href="./601px-Pokebola-pokeball-png-0.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/502276ff4f.js" crossorigin="anonymous"></script>
+    <title>Pokedex LaunchX</title>
+    
+</head>
+<body background="./img/FondoPikachu.jpg">
+    <section class="container">        
+        <div class="nintendoDs">
+            <div class="nintendoUpper">
+                <div class="nintendoLeftSpeaker">
+                    <div class="speaker" id="speaker1"></div>
+                    <div class="speaker" id="speaker2"></div>
+                    <div class="speaker" id="speaker3"></div>
+                    <div class="speaker" id="speaker4"></div>
+                    <div class="speaker" id="speaker5"></div>
+                    <div class="speaker" id="speaker6"></div>
+                </div>
+                <div class="nintendoScreenFrame">
+                    <div class="nintendoScreen">                        
+                        <h1>Pokedex LaunchX</h1>                        
+                        <input type="text" placeholder="pikachu" name="pokeName" id="pokeName"><br>                                             
+                        <h2>Prsiona "A" para buscar</h2>
+                    </div>
+                </div>
+                <div class="nintendoRightSpeaker">
+                    <div class="speaker" id="speaker1"></div>
+                    <div class="speaker" id="speaker2"></div>
+                    <div class="speaker" id="speaker3"></div>
+                    <div class="speaker" id="speaker4"></div>
+                    <div class="speaker" id="speaker5"></div>
+                    <div class="speaker" id="speaker6"></div>
+                </div>
+            </div>
+            <div class="nintendoMiddle">
+                <div class="middleLeftLine"></div>
+                <div class="middleCamera"></div>
+                <div class="middleRightLine"></div>
+                <div class="middleFirstLight"></div>
+                <div class="middleSecondLight"></div>
+            </div>
+            <div class="nintendoBottom">
+                <div class="cross">
+                    <div class="horizontalCross">
+                        <div class="horizontalCrossLine1"></div>
+                        <div class="horizontalCrossLine2"></div>
+                    </div>
+                    <div class="verticalCross">
+                        <div class="verticalCrossLine1"></div>
+                        <div class="verticalCrossLine2"></div>
+                    </div>
+                </div>
+                <div class="bottomScreenFrame">
+                    <div class="nintendoScreen2">
+                        <input type="text" name="pokemonName" id="pokemonName" class="stats" readonly>
+                        <img src="./601px-Pokebola-pokeball-png-0.png" alt="Pokemon" width="150px" id="pokeImg"><br>
+                        <input type="text" name="pokemonType" id="pokemonType" class="stats" placeholder="Type:" readonly>
+                        <input type="text" name="pokemonHp" id="pokemonHp" class="stats" placeholder="Hp:" readonly><i class="fa-solid fa-heart"></i>
+                        <input type="text" name="pokemonAttack" id="pokemonAttack" class="stats" placeholder="Attack:" readonly><i class="sword">⚔️</i>
+                        <input type="text" name="pokemonDefense" id="pokemonDefense" class="stats" placeholder="Defense:" readonly><i class="fa-solid fa-shield"></i>
+                        <input type="text" name="pokemonSpecialAttack" id="pokemonSpecialAttack" class="stats" placeholder="SAttack:" readonly><i class="specialSword">⚔️✨</i>
+                        <input type="text" name="pokemonSpecialDefense" id="pokemonSpecialDefense" class="stats" placeholder="SDefense:" readonly><i class="fa-solid fa-shield shieldSword" id="specialShield">✨</i>
+                        <textarea name="pokemonAbilities" id="pokemonAbilities" cols="22" rows="5" readonly></textarea>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <div class="button" id="buttonX">X</div>
+                    <div class="button" id="buttonY">Y</div>
+                    <button onclick="fetchPokemon()"><div class="button" id="buttonA">A</div></button>
+                    <div class="button" id="buttonB">B</div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<footer>
+    <script src="./pokedex.js"></script>
+</footer>
+</html>
